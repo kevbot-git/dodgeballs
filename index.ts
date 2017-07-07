@@ -8,14 +8,14 @@ import { Server as WebSocketServer } from 'ws';
 import { Log as l } from './server/util';
 import { DodgeballServer } from './server/game';
 
-const PORT = process.env.PORT || 8080;
+let port = process.env.PORT || 8080;
 
 let app = express();
 app.use(express.static(path.join(__dirname, '/client/www')));
 
 let server = http.createServer(app);
-server.listen(PORT, () => {
-	l.log('Listening on port ' + PORT + '.');
+server.listen(port, () => {
+	l.log('Listening on port ' + port + '.');
 });
 
 let game: DodgeballServer = new DodgeballServer();
