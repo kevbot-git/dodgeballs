@@ -1,0 +1,32 @@
+{
+  "name": "dodgeballs",
+  "version": "1.0.0",
+  "description": "Simple multiplayer game using Node.js + TypeScript + Express + WebSockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevbot-git/dodgeballs.git"
+  },
+  "keywords": [
+    "multiplayer",
+    "game",
+    "node",
+    "typescript"
+  ],
+  "author": "Kevin Menhinick",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/kevbot-git/dodgeballs/issues"
+  },
+  "homepage": "https://github.com/kevbot-git/dodgeballs#readme",
+  "devDependencies": {
+    "@types/node": "^8.0.8",
+    "typescript": "^2.4.1"
+  },
+  "dependencies": {
+    "ws": "^3.0.0"
+  }
+}
