@@ -11,7 +11,7 @@ import { DodgeballServer } from './server/game';
 const PORT = process.env.PORT || 8080;
 
 let app = express();
-app.use('/', express.static(path.join(__dirname, 'client/www')));
+app.use(express.static(path.join(__dirname, '/client/www')));
 
 let server = http.createServer(app);
 server.listen(PORT, () => {
