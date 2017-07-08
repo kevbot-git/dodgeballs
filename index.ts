@@ -2,7 +2,6 @@
 
 import * as http from 'http';
 import * as express from 'express';
-import * as path from 'path';
 import * as _ from 'lodash';
 import { Server as WebSocketServer } from 'ws';
 import { Log as l } from './server/util';
@@ -11,7 +10,7 @@ import { DodgeballServer } from './server/game';
 let port = process.env.PORT || 8080;
 
 let app = express();
-app.use(express.static(path.join(__dirname, '/client/www')));
+app.use(express.static(__dirname + '/client/www/'));
 
 let server = http.createServer(app);
 server.listen(port, () => {
